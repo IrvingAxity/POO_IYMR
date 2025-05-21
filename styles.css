@@ -1,0 +1,57 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f8f8f8;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ccc;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #333;
+}
+
+.saldo, .acciones, .info {
+  margin-bottom: 20px;
+}
+
+input[type="number"], input[type="text"] {
+  padding: 8px;
+  margin-right: 10px;
+  width: 200px;
+}
+
+button {
+  padding: 8px 15px;
+  cursor: pointer;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+.productos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.producto-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  width: 200px;
+  background: #f4f4f4;
+}

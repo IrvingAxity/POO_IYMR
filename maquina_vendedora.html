@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Máquina Vendedora</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h1>Máquina Vendedora de Dulces</h1>
+
+        <div class="saldo">
+            <label for="dineroInput">Insertar dinero:</label>
+            <input type="number" id="dineroInput" placeholder="Ej: 20" />
+            <button onclick="insertarDinero()">Insertar</button>
+            <p id="saldoActual">Saldo: $0</p>
+            <p id="cambioDevuelto">Cambio devuelto: $0</p>
+
+        </div>
+
+        <div class="productos" id="listaProductos"></div>
+
+        <div class="acciones">
+            <input type="text" id="productoInput" placeholder="Nombre del producto" />
+            <button onclick="seleccionarProducto()">Comprar</button>
+            <button onclick="devolverCambio()">Devolver cambio</button>
+        </div>
+
+        <div class="info">
+            <h2>Ventas</h2>
+            <ul id="listaVentas"></ul>
+
+            <h2>Stock</h2>
+            <ul id="listaStock"></ul>
+        </div>
+    </div>
+
+    <script src="ejercicio.js"></script>
+</body>
+
+</html>
